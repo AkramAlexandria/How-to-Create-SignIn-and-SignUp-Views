@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/charity"
+            android:id="@+id/image01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="Find and Meet People around"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/image01"
+            android:id="@+id/appName1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="you to find Love"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/appName1"
+            android:id="@+id/appName2"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/appName2"
+            android:layout_marginBottom="70dp"
+            android:id="@+id/views"/>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/views"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:text="Sign in with Facebook"
+            android:textColor="#26576a"
+            android:textSize="20sp"
+            android:id="@+id/btnFacebook"
+            android:paddingLeft="30dp"
+            android:drawableLeft="@drawable/facebook"
+            android:drawableTint="#26576a"
+            android:background="@drawable/btn"/>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnFacebook"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:text="Sign in with Twitter"
+            android:textColor="#26576a"
+            android:textSize="20sp"
+            android:id="@+id/btnTwitter"
+            android:paddingLeft="30dp"
+            android:drawableLeft="@drawable/twitter"
+            android:drawableTint="#26576a"
+            android:background="@drawable/btn"/>
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnTwitter"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:textColor="#26576a"
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/btn"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Already Registered"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:id="@+id/txtSignIn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="95dp"
+                    android:text="Sign In"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:id="@+id/linkSignIn"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

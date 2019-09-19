@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/charity"
+            android:id="@+id/image01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="Find and Meet People around"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/image01"
+            android:id="@+id/appName1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="you to find Love"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/appName1"
+            android:id="@+id/appName2"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/appName2"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/views"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text="CREATE YOUR LOGIN"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/views"
+            android:id="@+id/txtcreate"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:id="@+id/editUserName"
+            android:text="Akram Hassan"
+            android:backgroundTint="#ffffff"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/txtcreate"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:id="@+id/editPassword"
+            android:text="Password"
+            android:backgroundTint="#ffffff"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/editUserName"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerInParent="true"
+            android:id="@+id/editRePassword"
+            android:text="Re-Enter Password"
+            android:backgroundTint="#ffffff"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/editPassword"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkAgree"
+            android:layout_below="@id/editRePassword"
+            android:layout_margin="@dimen/margin"
+            android:layout_alignRight="@id/editRePassword"
+            android:text="Agree To Terms and Conditions"
+            android:textSize="15sp"
+            android:checked="true"
+            android:textColor="#ffffff"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablefirst"
+            android:layout_below="@id/checkAgree">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtCancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Cancel"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Save"
+                    android:background="@drawable/btn"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="0dp"
+            android:text="Agree to Terms and Conditions"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/tablefirst"
+            android:id="@+id/txtAgree"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:id="@+id/rlfirst">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/charity"
+                android:id="@+id/image01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="Find and Meet People around"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/image01"
+                android:id="@+id/appName1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="you to find Love"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/appName1"
+                android:id="@+id/appName2"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/appName2"
+                android:layout_margin="0dp"
+                android:id="@+id/views"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="SIGN IN"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/views"
+                android:id="@+id/txtSignIn"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/editEnterEmail"
+                android:text="Enter Email"
+                android:backgroundTint="#ffffff"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_below="@id/txtSignIn"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/editEnterPassword"
+                android:text="Password"
+                android:backgroundTint="#ffffff"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_below="@id/editEnterEmail"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkRemember"
+                android:layout_below="@id/editEnterPassword"
+                android:layout_margin="5dp"
+                android:layout_alignRight="@id/editEnterEmail"
+                android:text="Remember Password"
+                android:textSize="15sp"
+                android:checked="true"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/checkRemember"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false"
+                android:text="Get Started"
+                android:textSize="20sp"
+                android:textColor="#26576a"
+                android:id="@+id/btnGetStart"
+                android:background="@drawable/btn"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tablefirst"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btnGetStart">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btnFacebookSign"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginRight="12dp"
+                        android:paddingLeft="18dp"
+                        android:drawableStart="@drawable/facebook"
+                        android:drawableTint="#26576a"
+                        android:background="@drawable/btn"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <Button
+                        android:id="@+id/btnTwitterSign"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="62dp"
+                        android:layout_marginRight="140dp"
+                        android:paddingLeft="18dp"
+                        android:drawableStart="@drawable/twitter"
+                        android:drawableTint="#26576a"
+                        android:background="@drawable/btn"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:text="FORGET PASSWWORD"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/tablefirst"
+                android:id="@+id/txtforgetpass"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="0dp"
+                    android:text="DONT'T HAVE ACCOUNT?"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:id="@+id/txtHavaAccount"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:clickable="true"
+                    android:id="@+id/linkCreateAccount"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
